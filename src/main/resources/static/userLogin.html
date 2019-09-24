@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>用户信息</title>
+</head>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="application/javascript">
+    $(function(){
+        $('#grid').datagrid({
+            url:'user/userList',
+            fit:true,
+            columns:[[
+                {filed:'id',title:'编号',width:50},
+                {filed:'username',title:'姓名',width:50}
+            ]]
+        })
+    })
+</script>
+<body>
+<table id="grid"></table>
+</body>
+</html>
